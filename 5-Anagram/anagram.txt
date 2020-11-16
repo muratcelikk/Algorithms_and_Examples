@@ -1,0 +1,31 @@
+package aapPack;
+
+import java.util.Arrays;
+
+import javax.swing.JOptionPane;
+
+public class Dashboard {
+
+	public static void main(String[] args) {
+
+		String a = JOptionPane.showInputDialog("ilk metni giriniz");
+		String a1 = JOptionPane.showInputDialog("ikinci metni giriniz");
+
+		boolean statu = anagram(a, a1);
+		if (statu) {
+			JOptionPane.showMessageDialog(null, "anagram");
+		} else {
+			JOptionPane.showMessageDialog(null, "değil");
+		}
+
+	}
+
+	public static boolean anagram(String a, String a1) {
+		char[] ch1 = a.replaceAll("[s]", "").toCharArray(); // karakterleri char dizisine convertle. harf harf
+		char[] ch2 = a1.replaceAll("[s]", "").toCharArray();
+		Arrays.sort(ch1); // harfleri diz
+		Arrays.sort(ch2);
+		return Arrays.equals(ch1, ch2);
+	}
+
+}

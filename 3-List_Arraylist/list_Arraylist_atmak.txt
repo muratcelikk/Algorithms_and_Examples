@@ -1,0 +1,26 @@
+package aapPack;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Dashboard {
+
+	public static void main(String[] args) {
+		
+		List<Integer> ls = new ArrayList<>();
+		ls.add(10);
+		ls.add(5);
+		ls.add(17);
+		ls.add(47);
+//	int index = ls.size()-1; //en son eleman demek(47)
+	int index = ls.size()-2; //17 yok say demek	
+//	int index = ls.size()-3; //5 yok say demek	
+//	int index = ls.size()-4; //10 yok say demek	
+	ls.remove(index);
+	
+//	ls.remove(new Integer(17)); //KESTİRME YOL
+	
+	System.out.println(ls);
+	}
+}
+

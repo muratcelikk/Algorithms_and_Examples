@@ -1,0 +1,22 @@
+package aapPack;
+
+public class Dashboard {
+	
+	public static void main(String[] args) {
+		
+			int[] marks = {123, 456, 6789, 898};
+		
+			int a = maximum(marks); 
+			System.out.println("yüksek puan " + a);
+	}
+	public static int maximum(int[] numbers) {
+		int safir = numbers[0];
+		for(int i:numbers) {
+			if(i>safir) {
+				safir = i;
+			}
+		}
+		return safir;
+	}
+	
+}

@@ -1,0 +1,17 @@
+package aapPack;
+
+import java.util.Scanner;
+
+public class Dashboard {
+
+	public static void main(String[] args) {
+		double top=0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Bu sayılardan birini gir: 2,3,5,7,13,17,19.. ");
+		int a = sc.nextInt();
+		
+		top=Math.pow(2, a-1)*(Math.pow(2, a)-1);
+		
+		System.out.println(top + " mükemmel sayı");	
+	}
+}

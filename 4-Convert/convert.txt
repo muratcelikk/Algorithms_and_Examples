@@ -1,0 +1,18 @@
+package aapPack;
+
+public class Dashboard {
+
+	public static void main(String[] args) {
+
+		String a = "5";
+		int b = 4;
+		
+//		String c = Integer.toString(b);  //Integer.toString (İnteger-->String) //Not: İNTEGER b değeri               | String  444
+//		Integer c = Integer.valueOf(a);  //String*Integer-->Integer            //Not: İNTEGER a veya String b değeri | Integer 15 ? 12;
+//		String c = String.valueOf(b);	 //String*Integer-->Integer 		   //Not: İNTEGER a veya String b değeri | String  555 ? 444 
+		int c = Integer.parseInt(a);     //String-->Integer                    //Not: STRİNG a değeri				 | Integer 15
+		System.out.println(c+c+c);
+
+	}
+
+}

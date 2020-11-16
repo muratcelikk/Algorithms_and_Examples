@@ -1,0 +1,19 @@
+package aapPack;
+
+import java.util.Scanner;
+
+public class Dashboard {
+
+	public static void main(String[] args) {
+
+	Scanner sc = new Scanner(System.in);
+	System.out.println("3 basamaklı sayı gir");
+	Integer a = sc.nextInt();
+	String sayi1 = String.valueOf(a/100); //321-->100'e böl=3.21-->3
+	String sayi2 = String.valueOf(a%10); //321 mod 10-->1
+	String sayi3 = String.valueOf((321/10)%10);// 321==>10'a böl=32.1==>32 mod 10-->2
+	
+	System.out.println(sayi1+sayi3+sayi2);
+	}
+}
+

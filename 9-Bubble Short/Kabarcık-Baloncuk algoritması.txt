@@ -1,0 +1,32 @@
+package aapPack;
+
+public class Dashboard {
+
+	public static void main(String[] args) {
+
+		int[] dizi = { 54, 910, 305, 45, 10, 35 };
+//		for (int i = 0; i < dizi.length; i++) {
+//			System.out.print(dizi[i] + " ");			
+//		}
+//		System.out.println();
+
+		int geci;
+
+		for (int i = 0; i < dizi.length; i++) {
+			for (int j = 0; j < dizi.length - 1; j++) {
+				
+				if (dizi[j] > dizi[j + 1]) {
+					geci = dizi[j];
+					dizi[j] = dizi[j + 1];
+					dizi[j + 1] = geci;
+				}
+			}
+		}
+//		System.out.println("düzgün sıra ");
+		for (int i = 0; i < dizi.length; i++) {
+			System.out.print(dizi[i] + " ");
+		}
+	
+	}
+
+}
